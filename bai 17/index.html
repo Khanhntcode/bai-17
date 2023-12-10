@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    // khai báo hàm nhận vào 2 tham số và trả tổng của 2 tham số này
+    // function sum(a, b) {
+    //     return a + b;
+    // }
+
+    // const number1 = Number  (prompt ('Enter number 1'));
+    // const number2 = Number  (prompt ('Enter number 2'));
+
+    // const result = sum(number1, number2); //30
+
+    // console.log(result);
+
+
+    // khai báo hàm nhận vào điểm toán lý hóa và trả về điểm trung bình
+    function diemTb(toan, ly, hoa) {
+        return(toan + ly + hoa) / 3
+    }
+
+    //khai báo hàm xếp loại học sinh dựa vào điểm trung bình
+    function xepLoai(diemTb) {
+        if (diemTb >= 8) {
+            return 'giỏi'
+        } else if (diemTb >= 6.5) {
+            return 'khá'
+        } else if (diemTb >= 5) {
+            return 'trung bình'
+        } else{
+            return 'yếu'
+        }
+    }
+
+    //Lấy điểm toán lý hóa từ người dùng
+    const toan = Number(prompt('Nhập điểm toán'));
+    const ly = Number(prompt('Nhập điểm lý'));
+    const hoa = Number(prompt('Nhập điểm hóa'));
+
+    console.log(toan, ly, hoa);
+
+
+    const tb = diemTb(toan, ly, hoa);
+    
+    console.log(tb);
+
+    
+    const result = xepLoai(tb);
+
+    console.log(result);
+
+
+
+
+    </script>
+</html>

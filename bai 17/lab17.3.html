@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      percentageOfWord1;
+      function percentageOfWord1(population) {
+        return (population / 7900000000) * 100;
+      }
+
+      const China = percentageOfWord1(1441000000);
+      const Finland = percentageOfWord1(6000000);
+      const America = percentageOfWord1(337000000);
+      console.log(China);
+      console.log(Finland);
+      console.log(America);
+
+      percentageOfWord2;
+      function percentageOfWord2(population) {
+        return (population / 7900000000) * 100;
+      }
+
+      const kingdomOfEngland = percentageOfWord2(67000000);
+      console.log(kingdomOfEngland);
+
+      // Hàm mũi tên để tính phần trăm dân số thế giới
+      const percentageOfWorld3 = (population) =>
+        (population / 7900000000) * 100;
+      percentageOfWord1(12);
+      // Gọi hàm cho 3 quốc gia khác nhau
+      const chinaPercentage = percentageOfWorld3(1440000000);
+      const indiaPercentage = percentageOfWorld3(1390000000);
+      const usaPercentage = percentageOfWorld3(330000000);
+
+      // In kết quả ra console
+      console.log(
+        `China has ${chinaPercentage.toFixed(1)}% of the world population.`
+      );
+      console.log(
+        `India has ${indiaPercentage.toFixed(1)}% of the world population.`
+      );
+      console.log(
+        `USA has ${usaPercentage.toFixed(1)}% of the world population.`
+      );
+    </script>
+  </body>
+</html>

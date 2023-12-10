@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Viết hàm 'describeCountry' nhận ba tham số: 'country', 'population' và 'capitalCity'
+      //Rồi trả về với định dạng như sau
+      function describeCountry(country, population, capitalCity) {
+        return `${country} has ${population} million people and its capital city is ${capitalCity}`;
+      }
+      //Đặt tên cho các biến thứ tự là Finland 6 Helsinki
+      const country1Info = describeCountry("Finland", 6, "Helsinki");
+      const country2Info = describeCountry("America", 337, "Washington");
+      const country3Info = describeCountry("Kingdom of England", 67, "London");
+
+      console.log(country1Info);
+      console.log(country2Info);
+      console.log(country3Info);
+    </script>
+  </body>
+</html>
